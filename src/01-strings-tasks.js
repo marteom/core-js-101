@@ -245,7 +245,6 @@ function getRectangleString(width, height) {
     }
   }
 
-  console.log(result);
   return result;
 }
 
