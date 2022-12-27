@@ -119,8 +119,12 @@ function getArrayOfStrings(arr) {
  *    [ 1, 2, 3, 4, 5, 'false' ]         => [ 1, 2, 3, 4, 5, 'false' ]
  *    [ false, 0, NaN, '', undefined ]   => [ ]
  */
-function removeFalsyValues(/* arr */) {
-  throw new Error('Not implemented');
+function removeFalsyValues(arr) {
+  if (arr.length === 0) {
+    return arr;
+  }
+
+  return arr.filter((element) => Boolean(element) !== false);
 }
 
 /**
